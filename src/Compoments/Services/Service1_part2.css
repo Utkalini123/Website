@@ -1,0 +1,71 @@
+.card_Container{
+    display: flex;
+    width: 75%;
+    
+    /* justify-content: center; */
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 170px;
+    display: flex;
+    cursor: pointer;
+
+}
+.Service2_card{
+
+    
+    height:  400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    /* display: flex; */
+
+}
+.Service2_card img{
+    width: 100%;
+    height: 400px;
+    /* height: auto; */
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .card_Container {
+        width: 90%;
+        margin-left: 5%;
+        justify-content: center;
+    }
+
+    .Service2_card {
+        height: 280px; /* Further reduced height for tablets */
+        margin: 20px;  
+    }
+
+    .Service2_card img {
+        height: 260px; /* Reduced image height for tablets */
+    }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+    .card_Container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .Service2_card {
+        width: 50%;
+        height: 200px; /* Further reduced height for phones */
+        margin: 10px 0; 
+    }
+
+    .Service2_card img {
+        height: 180px; /* Reduced image height for phones */
+    }
+}
+

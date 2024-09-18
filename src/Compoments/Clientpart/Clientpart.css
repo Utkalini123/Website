@@ -1,0 +1,179 @@
+/* Container for the client testimonials */
+.main-clientbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional: Set a max width for larger screens */
+    margin: 200px auto; /* Center horizontally with top margin */
+    margin-bottom: -50px;
+}
+
+/* Styling for the client image */
+.clientbox-img {
+    flex: 1;
+}
+
+/* Styling for the image inside the clientbox-img */
+.clientimg {
+    width: 100%;
+    height: auto;
+}
+
+/* Wrapper for sliding messages */
+.slider-wrapper {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Container for the sliding testimonials */
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual client message */
+.clientbox-message {
+    min-width: 100%; /* Each message takes up the full width of the container */
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Optional: border between slides */
+}
+
+/* Styling for the quote icon */
+.client-icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Styling for testimonial paragraph */
+.client-para {
+    font-size: 16px;
+    margin: 0 0 10px 40px; /* Margin left for the quote icon */
+}
+
+/* Styling for client name and position */
+.client-span1 {
+    font-weight: bold;
+}
+
+.client-span2 {
+    color: gray;
+}
+
+/* Dots icon */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333; /* Active dot color */
+}
+
+/* Navigation buttons */
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; /* Ensure buttons are above other content */
+    opacity: 0; /* Hide buttons by default */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+/* Show buttons on hover over the slider wrapper */
+.slider-wrapper:hover .prev-button,
+.slider-wrapper:hover .next-button {
+    opacity: 1; /* Show buttons when hovering over the slider wrapper */
+}
+
+/* Positioning for navigation buttons */
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .main-clientbox {
+        margin: 100px auto; /* Adjust top margin for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-clientbox {
+        flex-direction: column;
+        margin: 50px auto; /* Adjust top margin for small screens */
+    }
+
+    .clientbox-img {
+        margin-bottom: 20px; /* Add space below the image for small screens */
+    }
+
+    .slider-wrapper {
+        flex: none;
+    }
+
+    .client-para {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin: 0 0 10px 20px; /* Adjust margin for quote icon */
+    }
+
+    .client-span1, .client-span2 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .dots-container {
+        margin-top: 10px; /* Adjust margin for dots on small screens */
+    }
+
+    .prev-button, .next-button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-para {
+        font-size: 12px; /* Adjust font size for very small screens */
+        margin: 0 0 10px 10px; /* Adjust margin for quote icon */
+    }
+    .main-clientbox{
+        margin-top: 250px;
+        margin-bottom: -50px;
+    }
+
+
+    .client-span1, .client-span2 {
+        font-size: 12px; /* Adjust font size for very small screens */
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .prev-button, .next-button {
+        padding: 6px;
+    }
+}

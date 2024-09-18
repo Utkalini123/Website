@@ -1,0 +1,83 @@
+/* Main_part2.css */
+.new_main {
+    width: 60%; /* Adjusted for better responsiveness */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 100px;
+    margin-bottom: -100px;
+}
+
+.new_inner {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+    grid-template-rows: auto; /* Adjust rows automatically based on content */
+    width: 100%; /* Ensure the grid takes up full width of the container */
+    gap: 0px; /* Add a small gap between grid items */
+}
+
+.image_container img {
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+.mainService_slide {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    position: relative; /* Allow positioning of child elements */
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.mainService_slide h2 {
+    font-size: 1.5rem; /* Responsive font size */
+    margin: 0;
+    height: 100px;
+    align-items: center;
+}
+
+.mainService_slide p {
+    font-size: 1rem; /* Responsive font size */
+    margin: 0;
+    line-height: 1.5;
+    /* height: 90px; */
+    padding-bottom: 90px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .mainService_slide {
+        width: 100%; /* Full width on medium screens */
+    }
+
+    .mainService_slide h2 {
+        font-size: 2rem; /* Larger font size for headings on larger screens */
+    }
+
+    .mainService_slide p {
+        font-size: 1.2rem; /* Larger font size for paragraphs on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .new_inner {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns layout for larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .mainService_slide h2 {
+        font-size: 1.2rem; /* Smaller font size for very small screens */
+    }
+
+    .mainService_slide p {
+        font-size: 0.9rem; /* Smaller font size for very small screens */
+    }
+}

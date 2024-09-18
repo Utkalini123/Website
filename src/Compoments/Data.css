@@ -1,0 +1,194 @@
+/* StatsBoxes.css */
+
+/* Base Styles */
+.container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box {
+  width: 160px; /* Adjust the width as needed */
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.803);
+  text-align: center;
+  border-radius: 0px;
+  top: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.number {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Data Box */
+.data-box {
+  display: flex;
+  width: 650px;
+  background-color: #ffffff;
+  margin-left: 25%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  border: 0;
+  outline: rgb(232, 230, 230);
+  height: 300px;
+}
+
+.data-h2 {
+  color: rgb(14, 1, 1);
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 550;
+  font-style: normal;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.data-span {
+  color: rgb(126, 194, 58);
+  font-size: smaller;
+  width: 333px;
+}
+
+.data-paga {
+  line-height: 18px;
+  font-family: sans-serif;
+  padding-top: 1%;
+  width: 344px;
+  font-size: 10px;
+  color: rgb(131, 124, 164);
+}
+
+.data-span1 {
+  color: rgb(18, 18, 140);
+}
+
+.data-button {
+  background-color: rgb(54, 54, 233);
+  width: 130px;
+  height: 40px;
+  align-items: center;
+  color: rgba(248, 250, 252, 0.952);
+  margin-bottom: 2%;
+  border: 0;
+  outline: 0;
+}
+
+.Imagesvideo1 {
+  width: 170px;
+  height: 300px;
+}
+
+/* Responsive Styles */
+
+/* For screens up to 1024px (tablets and large screens) */
+@media (max-width: 1024px) {
+  .data-box {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .data-h2 {
+    font-size: 20px;
+  }
+
+  .data-span {
+    font-size: small;
+  }
+
+  .data-paga {
+    font-size: 12px;
+  }
+
+  .data-button {
+    width: 120px;
+    height: 35px;
+  }
+
+  .Imagesvideo1 {
+    width: 150px;
+  }
+}
+
+/* For screens up to 768px (portrait tablets and large phones) */
+@media (max-width: 768px) {
+  .data-box {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust height for better fit */
+  }
+
+  .data-h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .data-span {
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .data-paga {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .data-button {
+    width: 110px;
+    height: 30px;
+  }
+
+  .Imagesvideo1 {
+    width: 120px;
+  }
+}
+
+/* For screens up to 480px (mobile devices) */
+@media (max-width: 480px) {
+  .data-box {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto; /* Adjust height for better fit */
+  }
+
+  .data-h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .data-span {
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .data-paga {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .data-button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .Imagesvideo1 {
+    width: 100px;
+  }
+}
